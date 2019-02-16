@@ -1,3 +1,6 @@
+// By Eugene Chaban    <chaban.genya@gmail.com>
+
+
 //split lines
 function splitLines(text) {
     return text.split(/\r?\n|\r/);
