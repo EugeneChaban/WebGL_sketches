@@ -1,3 +1,4 @@
+//compare
 class Vector3 {
     constructor(x, y, z) {
         this.e = new Float32Array(3); // elements
@@ -12,6 +13,12 @@ class Vector3 {
         }
         return this;
     }
+    subtract(v) {
+        for (let i = 0; i < 3; i++) {
+            this.e[i] -= v.e[i];
+        }
+        return this;
+    }
 
     get x() { return this.e[0]; }
     get y() { return this.e[1]; }
@@ -20,4 +27,6 @@ class Vector3 {
     set x(val) { this.e[0] = val; }
     set y(val) { this.e[1] = val; }
     set z(val) { this.e[2] = val; }
+
 };
+
