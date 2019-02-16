@@ -1,4 +1,6 @@
-//compare
+// 3D vector class
+// By Eugene Chaban    <chaban.genya@gmail.com>
+
 class Vector3 {
     constructor(x, y, z) {
         this.e = new Float32Array(3); // elements

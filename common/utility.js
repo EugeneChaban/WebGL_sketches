@@ -13,8 +13,8 @@ function degrees(rads) {
     return rads * (180.0 / Math.PI);
 }
 
-//comparing Float
-function compareFloat(a, b, e = 0.001) {
+// comparing floating-point numbers for near-equality
+function compareFloat(a, b, e = 0.001) {    // e defines acceptable error
     return Math.abs(a - b) < e;
 }
 
