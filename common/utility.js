@@ -3,7 +3,7 @@
 
 //split lines
 function splitLines(text) {
-    return text.split(/\r?\n|\r/);
+    return text.split(/\r?\n|\r/); // split text into lines, handling different newline formats
 }
 
 // convert degrees to radians
