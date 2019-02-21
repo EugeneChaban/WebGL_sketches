@@ -12,6 +12,9 @@ function testCompareFloat() {
     if (compareFloat(x, x + e*1.1, e)) {
         return false;
     }
+	if (!compareFloat(math.sqrt(2), 99/70)) {
+		return false;
+	}
     return true;
 }
 
