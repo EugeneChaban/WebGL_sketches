@@ -13,7 +13,7 @@ function testCompareFloat() {
         return false;
     }
     if (!compareFloat(Math.sqrt(2), 99/70)) {
-      return false;
+        return false;
     }
     return true;
 }
