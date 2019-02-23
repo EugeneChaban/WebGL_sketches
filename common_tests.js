@@ -22,6 +22,9 @@ function testDegRad() {
     for (let deg of [10.0, -20.04, 30.0]) {
         let tstRad = radians(deg);
         let tstDeg = degrees(tstRad);
+		if (Math.abs(tstRad) >= Math.abs(tstDeg)) {
+			return false;
+		}
         if (!compareFloat(deg, tstDeg)) {
             return false;
         }
