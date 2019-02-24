@@ -1,12 +1,10 @@
 function println(text) {
   const tout = document.getElementById("out");
-  if (text === undefined) {
-    if (tout) {
-      tout.innerHTML += "" + "<br>";
-    }
-  } else {
-    if (tout) {
-      tout.innerHTML += text + "<br>";
+  if (tout) {
+    if (text === undefined) {
+        tout.innerHTML += "" + "<br>";
+    } else {
+        tout.innerHTML += text + "<br>";
     }
   }
 }
