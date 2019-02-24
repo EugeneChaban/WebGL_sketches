@@ -1,6 +1,14 @@
 function println(text) {
-    const tout = document.getElementById("out");
-    if (tout) tout.innerHTML += text + "<br>";
+  const tout = document.getElementById("out");
+  if (text === undefined) {
+    if (tout) {
+      tout.innerHTML += "" + "<br>";
+    }
+  } else {
+    if (tout) {
+      tout.innerHTML += text + "<br>";
+    }
+  }
 }
 
 function testCompareFloat() {
@@ -41,3 +49,4 @@ function main() {
         println(testName + ": <span style='color: " + resColor + ";'>" + resText + "</span>");
     }
 }
+

@@ -1,9 +1,9 @@
 // By Eugene Chaban    <chaban.genya@gmail.com>
 
 
-//split lines
+// split text into lines, handling different newline formats
 function splitLines(text) {
-    return text.split(/\r?\n|\r/); // split text into lines, handling different newline formats
+    return text.split(/\r?\n|\r/); 
 }
 
 // convert degrees to radians
