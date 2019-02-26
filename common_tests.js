@@ -1,9 +1,9 @@
 function println(text) {
   const tout = document.getElementById("out");
   if (tout) {
-	  let t = text
+    let t = text
     if (t === undefined) {
-        t = "";
+      t = "";
     }
 	tout.innerHTML += text + "<br>";
   }
