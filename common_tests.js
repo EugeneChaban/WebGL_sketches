@@ -1,11 +1,11 @@
 function println(text) {
   const tout = document.getElementById("out");
   if (tout) {
-    if (text === undefined) {
-        tout.innerHTML += "" + "<br>";
-    } else {
-        tout.innerHTML += text + "<br>";
+	  let t = text
+    if (t === undefined) {
+        t = "";
     }
+	tout.innerHTML += text + "<br>";
   }
 }
 
