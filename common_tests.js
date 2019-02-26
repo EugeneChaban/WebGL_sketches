@@ -5,7 +5,7 @@ function println(text) {
     if (t === undefined) {
       t = "";
     }
-	tout.innerHTML += text + "<br>";
+    tout.innerHTML += text + "<br>";
   }
 }
 
