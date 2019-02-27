@@ -30,4 +30,3 @@ class Vector3 {
 	set y(val) { this.e[1] = val; }
 	set z(val) { this.e[2] = val; }
 };
-

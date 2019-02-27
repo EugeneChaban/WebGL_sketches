@@ -20,5 +20,3 @@ function degrees(rads) {
 function compareFloat(a, b, e = 0.001) {    // e defines acceptable error
 	return Math.abs(a - b) < e;
 }
-
-

@@ -47,4 +47,3 @@ function main() {
 		println(testName + ": <span style='color: " + resColor + ";'>" + resText + "</span>");
 	}
 }
-
