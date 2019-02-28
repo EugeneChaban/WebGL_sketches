@@ -22,6 +22,13 @@ class Vector3 {
 		}
 		return this;
 	}
+	
+	scale(s) {
+		for (let i = 0; i < 3; i++) {
+			this.e[i] *= s;
+		}
+		return this;
+	}
 
 	get x() { return this.e[0]; }
 	get y() { return this.e[1]; }
