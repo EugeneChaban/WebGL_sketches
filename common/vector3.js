@@ -15,6 +15,7 @@ class Vector3 {
 		}
 		return this;
 	}
+	
 	subtract(v) {
 		for (let i = 0; i < 3; i++) {
 			this.e[i] -= v.e[i];
