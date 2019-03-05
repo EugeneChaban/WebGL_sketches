@@ -30,6 +30,13 @@ class Vector3 {
 		return this;
 	}
 
+	compare(v, e = 1e-3) {
+		for (let i = 0; i < 3; i++) {
+			if (!compareFloat(this.e[i], v.e[i], e)) return false;
+		}
+		return true;
+	}
+	
 	get x() { return this.e[0]; }
 	get y() { return this.e[1]; }
 	get z() { return this.e[2]; }
@@ -38,3 +45,5 @@ class Vector3 {
 	set y(val) { this.e[1] = val; }
 	set z(val) { this.e[2] = val; }
 };
+
+

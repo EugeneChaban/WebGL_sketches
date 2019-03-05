@@ -38,8 +38,15 @@ function testDegRad() {
 	return true;
 }
 
+function testVectorScale() {
+	let v1 = new Vector3(1, 2, 3);
+	v1.scale(2);
+	b = v1.scale(1/2);
+	return v1.compare(b);
+}
+
 function main() {
-	const tests = ["CompareFloat", "DegRad"];
+	const tests = ["CompareFloat", "DegRad", "VectorScale"];
 	for (const testName of tests) {
 		const res = eval("test" + testName + "();");
 		const resColor = res ? "green" : "red";
