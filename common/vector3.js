@@ -37,6 +37,13 @@ class Vector3 {
 		return true;
 	}
 	
+	copy(v) {
+		for (let i = 0; i < 3; i++) {
+			this.e[i] = v.e[i];
+		}
+		return this;
+	}
+	
 	get x() { return this.e[0]; }
 	get y() { return this.e[1]; }
 	get z() { return this.e[2]; }

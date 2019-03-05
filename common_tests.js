@@ -39,10 +39,12 @@ function testDegRad() {
 }
 
 function testVectorScale() {
-	let v1 = new Vector3(1, 2, 3);
-	v1.scale(2);
-	b = v1.scale(1/2);
-	return v1.compare(b);
+	const v1 = new Vector3(1, 2, 3);
+	const v2 = new Vector3();
+	v2.copy(v1);
+	v2.scale(2);
+	v2.scale(1/2);
+	return v1.compare(v2);
 }
 
 function main() {
