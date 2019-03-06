@@ -44,6 +44,28 @@ class Vector3 {
 		return this;
 	}
 	
+	dot(v) {
+		let sum = 0;
+		for (let i = 0; i < 3; i++) {
+			let a = this.e[i] * v.e[i];
+			sum += a;
+		}
+		return sum;
+	}
+	
+	cross(v) {
+		let ax = this.x;
+		let ay = this.y;
+		let az = this.z;
+		let bx = v.x;
+		let by = v.y;
+		let bz = v.z;
+		this.x = ay * bz - by * az;
+		this.y = ax * bz - bx * az;
+		this.z = ax * by - bx * ay;
+		return this;
+	}
+	
 	get x() { return this.e[0]; }
 	get y() { return this.e[1]; }
 	get z() { return this.e[2]; }
