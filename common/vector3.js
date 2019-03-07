@@ -61,7 +61,7 @@ class Vector3 {
 		let by = v.y;
 		let bz = v.z;
 		this.x = ay * bz - by * az;
-		this.y = ax * bz - bx * az;
+		this.y = az * bx - bz * ax;
 		this.z = ax * by - bx * ay;
 		return this;
 	}
