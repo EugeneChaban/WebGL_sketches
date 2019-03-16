@@ -66,8 +66,16 @@ class Vector3 {
 		return this;
 	}
 	
-	norm() {
+	get norm() {
 		return Math.sqrt(this.dot(this));
+	}
+	
+	normalize() {
+		let n = this.norm
+		if (n !== 0) {
+			this.scale(1 / n);
+		}
+		return this
 	}
 	
 	get x() { return this.e[0]; }
