@@ -66,6 +66,10 @@ class Vector3 {
 		return this;
 	}
 	
+	norm() {
+		return Math.sqrt(this.dot(this));
+	}
+	
 	get x() { return this.e[0]; }
 	get y() { return this.e[1]; }
 	get z() { return this.e[2]; }
