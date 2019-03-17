@@ -91,7 +91,7 @@ class Vector3 {
 	}
 	
 	rotateDegX(deg) {
-		return this.rotateSinCosX(radians(deg));
+		return this.rotateRadX(radians(deg));
 	}
 	
 	rotateSinCosY(s, c) {
@@ -107,7 +107,7 @@ class Vector3 {
 	}
 	
 	rotateDegY(deg) {
-		return this.rotateSinCosY(radians(deg));
+		return this.rotateRadY(radians(deg));
 	}
 	
 	rotateSinCosZ (s, c) {
@@ -122,7 +122,7 @@ class Vector3 {
 	}
 	
 	rotateDegZ(deg) {
-		return this.rotateSinCosZ(radians(deg));
+		return this.rotateRadZ(radians(deg));
 	}
 	
 	get x() { return this.e[0]; }
