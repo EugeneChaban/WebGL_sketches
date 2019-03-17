@@ -47,8 +47,20 @@ function testVectorScale() {
 	return v1.compare(v2);
 }
 
+function testNorm() {
+	const v = new Vector3(1, 2, 3);
+	n = v.norm;
+	return compareFloat(n * n, v.dot(v));
+}
+
+function testNormalize() {
+	const v = new Vector3(1, 2, 3);
+	v.normalize();
+	return compareFloat(1, v.dot(v));
+}
+
 function main() {
-	const tests = ["CompareFloat", "DegRad", "VectorScale"];
+	const tests = ["CompareFloat", "DegRad", "VectorScale", "Norm", "Normalize"];
 	for (const testName of tests) {
 		const res = eval("test" + testName + "();");
 		const resColor = res ? "green" : "red";

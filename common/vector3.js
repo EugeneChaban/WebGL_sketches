@@ -71,7 +71,7 @@ class Vector3 {
 	}
 	
 	normalize() {
-		let n = this.norm
+		const n = this.norm;
 		if (n !== 0) {
 			this.scale(1 / n);
 		}
