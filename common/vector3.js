@@ -78,6 +78,53 @@ class Vector3 {
 		return this
 	}
 	
+	rotateSinCosX(s, c) {
+		let y = this.y;
+		let z = this.z;
+		this.y = y * c - z * s;
+		this.z = y * s + z * c;
+		return this;
+	}
+	
+	rotateRadX(rad) {
+		return this.rotateSinCosX(Math.sin(rad), Math.cos(rad));
+	}
+	
+	rotateDegX(deg) {
+		return this.rotateSinCosX(radians(deg));
+	}
+	
+	rotateSinCosY(s, c) {
+		let z = this.z;
+		let x = this.x;
+		this.z = z * c - x * s;
+		this.x = z * s + x * c;
+		return this;
+	}
+	
+	rotateRadY(rad) {
+		return this.rotateSinCosY(Math.sin(rad), Math.cos(rad));
+	}
+	
+	rotateDegY(deg) {
+		return this.rotateSinCosY(radians(deg));
+	}
+	
+	rotateSinCosZ (s, c) {
+		let x = this.x;
+		let y = this.y;
+		this.x = x * c - y * s;
+		this.y = x * s + y * c;
+		return this;
+	}
+	rotateRadZ(rad) {
+		return this.rotateSinCosZ(Math.sin(rad), Math.cos(rad));
+	}
+	
+	rotateDegZ(deg) {
+		return this.rotateSinCosZ(radians(deg));
+	}
+	
 	get x() { return this.e[0]; }
 	get y() { return this.e[1]; }
 	get z() { return this.e[2]; }
