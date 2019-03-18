@@ -125,6 +125,12 @@ class Vector3 {
 		return this.rotateRadZ(radians(deg));
 	}
 	
+	rotateDegXYZ(degX, degY, degZ) {
+		return this.rotateDegX(degX)
+		           .rotateDegY(degY)
+		           .rotateDegZ(degZ);
+	}
+	
 	get x() { return this.e[0]; }
 	get y() { return this.e[1]; }
 	get z() { return this.e[2]; }
