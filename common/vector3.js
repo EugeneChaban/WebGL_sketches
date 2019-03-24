@@ -131,6 +131,10 @@ class Vector3 {
 		           .rotateDegZ(degZ);
 	}
 	
+	print() {
+		console.log(`(${this.x}, ${this.y}, ${this.z})`);
+	}
+	
 	get x() { return this.e[0]; }
 	get y() { return this.e[1]; }
 	get z() { return this.e[2]; }
