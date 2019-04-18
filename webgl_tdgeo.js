@@ -1,1 +1,1 @@
-main()
+function main() {};
